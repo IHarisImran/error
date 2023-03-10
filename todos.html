@@ -21,7 +21,7 @@
             .then(todos => {
                 todos.forEach(todo => {
                     const link = document.createElement('a');
-                    link.href = `todo.html?id=${todo.id}`;
+                    link.href = `/error/todo?id=${todo.id}`;
                     link.classList.add('transition-all', 'bg-slate-200', 'hover:bg-slate-300', 'active:bg-slate-400', 'border', 'border-slate-400', 'cursor-pointer', 'p-4', 'rounded', 'block', 'm-4');
                     link.textContent = todo.title;
                     items.appendChild(link);
