@@ -28,7 +28,7 @@
             .then(response => response.json())
             .then(todo => {
                 todoTitle.textContent = todo.title;
-                if (todo.completed === 'Completed') {
+                if (todo.completed === true) {
                     todoDescription.textContent = 'completed';
                     todoDescription.classList.add('text-green-600');
                 } else {
