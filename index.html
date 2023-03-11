@@ -1,14 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        fetch('./components/header.html').then(res => res.text()).then(data => { document.getElementById('header').innerHTML = data; });
+    </script>
 </head>
-<body class="min-h-screen flex flex-col items-center justify-center gap-6 max-w-xl mx-auto my-16">
-    <h1 class="font-semibold text-4xl">Home Page</h1>
-    <a href="/error/todos" class="bg-violet-600 hover:bg-violet-700 active:bg-violet-800 text-white px-4 py-2 rounded">Login to see data!</a>
+
+<body>
+    <header id="header"></header>
+
+    <!-- Section One -->
+    <section class="hero">
+        <div class="heroContainer">
+            <div class="heroContainerChild">
+                <h1>
+                    Connecting <span class="">Freight Carrying</span> Companies To
+                    <span>Carriers</span>
+                </h1>
+                <p>HermesGO services provides a platform in which freight
+                    loads can be posted for on deman drivers to
+                    accept
+                    said loads. These loads can be anything from line haul freight for 18 wheelers to parcel deliveries
+                    designated for vans or sedans.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Two -->
+    <section class="section2">
+        <h2>How It Works</h2>
+        <p class="headingPara">We help our clients meet their quotas
+            when it is most difficult to do so.
+            Sometimes, warehouses don't have enough drivers to prevent rollover freight, but with Hermes Go, managers
+            can easily request extra drivers on demand.</p>
+        <div class="cardContainer">
+            <div>
+                <img src="https://joadre.com/wp-content/uploads/2019/02/no-image.jpg">
+                <h3>Step 2</h3>
+                <p>Simply drag an excel sheet with
+                    package information onto our web
+                    application to upload the data re-
+                    garding packages that need to be
+                    delivered daily.</p>
+            </div>
+            <div>
+                <img src="https://joadre.com/wp-content/uploads/2019/02/no-image.jpg">
+                <h3>Step 3</h3>
+                <p>Our system automatically divides
+                    freight into compact regions, cre-
+                    ating loads that our drivers con-
+                    quer in no time.</p>
+            </div>
+            <div>
+                <img src="https://joadre.com/wp-content/uploads/2019/02/no-image.jpg">
+                <h3>Step 1</h3>
+                <p>You sit back, relax, and watch your
+                    warehouse get cleared by drivers
+                    in a system pushing for 98% LOS.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sextion Three -->
+    <section class="secton3">
+        <div class="section3Container">
+            <div class="left"></div>
+            <div class="right">
+                <h2>Hermes Go</h2>
+                <p>At HermesGo, we provide a digital platform that allows carriers and couriers conects one with the
+                    other. We are a costumer-centric companythat views our growth asequivalent to our costumer's
+                    satisfaction</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sextion Four -->
+    <section class="mx-auto max-w-5xl flex items-center gap-10">
+        <div class="sm:w-4/12">
+            <h2>What We Do</h2>
+            <p>
+                At HermesGo, we provide a digital platform
+                that allows carriers and couriers to join into
+                a network that simply connects one with
+                the other. </p>
+            <p>
+                We are a customer-centric company that
+                views our growth as equivalent to our
+                customer's satisfaction.
+            </p>
+        </div>
+        <div class="sm:w-8/13 flex items-center gap-10">
+            <div class="sm:w-6/12">
+                <img src="https://joadre.com/wp-content/uploads/2019/02/no-image.jpg" class="w-full h-44">
+                <h3>Ship Packages</h3>
+                <p>Carriers can easily manage their
+                    drivers, view their progress and
+                    location in live time, have access
+                    to pictures of each delivery being
+                    made, and always have access to
+                    extra drivers due to our marketing
+                    and training strategies and techniques.</p>
+            </div>
+            <div class="sm:w-6/12">
+                <img src="https://joadre.com/wp-content/uploads/2019/02/no-image.jpg" class="w-full h-44">
+                <h3>Delivery Packages</h3>
+                <p>Drivers often resort to dangerously
+                    juggling up to three phone apps while
+                    driving in order to scan packages, op-
+                    timize routes, and navigate to the
+                    destination. We will not only use the
+                    best scanning and route optimizing
+                    companies in the industry but also
+                    allow drivers to manage and record
+                    their day to day activities to make life
+                    easier.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sextion Five -->
+    <section></section>
+
+    <!-- Sextion Six -->
+    <section></section>
+
+    <footer></footer>
+
+    <script src="./scripts//components/header.js"></script>
 </body>
+
 </html>
