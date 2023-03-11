@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/index.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         fetch('./components/header.html').then(res => res.text()).then(data => { document.getElementById('header').innerHTML = data; });
@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!-- Header -->
     <header id="header"></header>
 
     <!-- Section One -->
@@ -70,7 +71,7 @@
     </section>
 
     <!-- Sextion Three -->
-    <section class="secton3">
+    <div class="section3Box">
         <div class="section3Container">
             <div class="left"></div>
             <div class="right">
@@ -80,40 +81,45 @@
                     satisfaction</p>
             </div>
         </div>
-    </section>
-
+    </div>
 
     <!-- Sextion Four -->
-    <section class="mx-auto max-w-5xl flex items-center gap-10">
-        <div class="sm:w-4/12">
+    <section class="section4">
+        <div class="left">
             <h2>What We Do</h2>
             <p>
                 At HermesGo, we provide a digital platform
                 that allows carriers and couriers to join into
                 a network that simply connects one with
-                the other. </p>
-            <p>
+                the other.
+                <br><br>
                 We are a customer-centric company that
                 views our growth as equivalent to our
                 customer's satisfaction.
             </p>
         </div>
-        <div class="sm:w-8/13 flex items-center gap-10">
-            <div class="sm:w-6/12">
-                <img src="https://joadre.com/wp-content/uploads/2019/02/no-image.jpg" class="w-full h-44">
-                <h3>Ship Packages</h3>
-                <p>Carriers can easily manage their
-                    drivers, view their progress and
-                    location in live time, have access
-                    to pictures of each delivery being
-                    made, and always have access to
-                    extra drivers due to our marketing
-                    and training strategies and techniques.</p>
+        <div class="right">
+            <div>
+                <img src="https://joadre.com/wp-content/uploads/2019/02/no-image.jpg">
+                <h3>Ship PACKAGES</h3>
+                <p>
+                    At HermesGo, we provide a digital platform
+                    that allows carriers and couriers to join into
+                    a network that simply connects one with
+                    the other. </p>
+                <p>
+                    We are a customer-centric company that
+                    views our growth as equivalent to our
+                    customer's satisfaction.
+                </p>
             </div>
-            <div class="sm:w-6/12">
-                <img src="https://joadre.com/wp-content/uploads/2019/02/no-image.jpg" class="w-full h-44">
-                <h3>Delivery Packages</h3>
-                <p>Drivers often resort to dangerously
+        </div>
+        <div class="right">
+            <div>
+                <img src="https://joadre.com/wp-content/uploads/2019/02/no-image.jpg">
+                <h3>Deliver Packages</h3>
+                <p>
+                    Drivers often resort to dangerously
                     juggling up to three phone apps while
                     driving in order to scan packages, op-
                     timize routes, and navigate to the
@@ -122,17 +128,43 @@
                     companies in the industry but also
                     allow drivers to manage and record
                     their day to day activities to make life
-                    easier.</p>
+                    easier.
+                </p>
             </div>
         </div>
     </section>
 
     <!-- Sextion Five -->
-    <section></section>
+    <section class="bg-[var(--primaryColor)]">
+        <div class="mx-auto max-w-5xl h-screen text-center py-28">
+            <h2 class="text-white">Driving for Hermesgo</h2>
+            <p class="text-sm md:text-base text-white my-7">During the holiday season, companies such as UPS and Ontrac face severe shortages of drivers
+                to complete deliveries. At HermesGO, we provide extra drivers to these large companies and
+                help them through their busiest season. When you sign up to become a driver with HermesGO,
+                you sign up for a job that offers many advantages, and allows you to earn extra money!</p>
+                <div class="grid grid-cols-12 items-center gap-10">
+                    <div class="col-span-4">
+                        <div class="bg-black bg-opacity-25 rounded-t-lg flex flex-col items-center justify-center border-b-4 border-green-600 h-72 shadow-xl">
+                            <img src="https://joadre.com/wp-content/uploads/2019/02/no-image.jpg" class="w-28 h-auto">
+                            <h3 class="text-green-600 mb-2 mt-4">Base Pay</h3>
+                            <p class="text-blue-200">N/A</p>
+                        </div>
+                    </div>
+                    <div class="col-span-4">
+                        <div class="bg-black bg-opacity-25 rounded-t-lg flex flex-col items-center justify-center border-b-4 border-green-600 h-96 shadow-xl">
+                            <img src="https://joadre.com/wp-content/uploads/2019/02/no-image.jpg" class="w-28 h-auto">
+                            <h3 class="text-green-600 mb-2 mt-4">Base Pay</h3>
+                            <p class="text-blue-200">N/A</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
 
     <!-- Sextion Six -->
     <section></section>
 
+    <!-- Footer -->
     <footer></footer>
 
     <script src="./scripts//components/header.js"></script>

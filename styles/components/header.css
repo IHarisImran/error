@@ -153,12 +153,14 @@ nav {
 }
 
 .contact {
-    padding: 0.25rem 1rem;
+    padding: 0.45rem 1.5rem;
     margin-top: 1rem;
-    transition-property: all;
     border-radius: 0.25rem;
     border-width: 2px;
     border: 2px solid var(--primaryColor);
+    background: white;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .contact:hover {
