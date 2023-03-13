@@ -122,3 +122,18 @@
         height: 5rem;
     }
 }
+
+
+
+
+.childs .logo {
+    width: 11rem;
+    height: 5rem;
+    margin-top: -2.25rem;
+}
+
+@media (min-width: 768px) {
+    .childs .logo {
+        width: 100%;
+    }
+}
