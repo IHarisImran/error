@@ -1,0 +1,124 @@
+.footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: rgba(161, 186, 192, 0.123);
+}
+
+@media (min-width: 1024px) {
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.topBody {
+    display: flex;
+    padding-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    text-align: center;
+    flex-direction: column;
+    max-width: 64rem;
+    gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .footer .topBody {
+        flex-direction: row;
+        height: 24rem;
+    }
+}
+
+.footer .oddChilds {
+    display: flex;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    border-top: 4px var(--primaryColor) solid;
+}
+
+@media (min-width: 768px) {
+    .footer .oddChilds {
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 37.5%;
+    }
+}
+
+.footer .oddChilds ul {
+    margin-top: 0.5rem;
+}
+
+.footer .lastChild {
+    max-width: 275px;
+}
+
+@media (min-width: 768px) {
+    .footer .middleChild {
+        width: 25%;
+    }
+}
+
+.footer .middleChild .childs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .middleChild ul {
+    margin-top: 2rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    gap: 2.5rem;
+}
+
+@media (min-width: 640px) {
+    .footer .middleChild ul {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.footer .middleChild .lastChild {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    .footer .middleChild .lastChild {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.footer .middleChild .lastChild div {
+    background-color: #059669;
+    height: 7rem;
+    width: 2px;
+}
+
+.baseFooter {
+    display: flex;
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    border-top-width: 2px;
+}
+
+@media (min-width: 640px) {
+    .baseFooter {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        height: 5rem;
+    }
+}

@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/index.css">
     <script>
         fetch('./components/header.html').then(res => res.text()).then(data => { document.getElementById('header').innerHTML = data; });
+
+        fetch('./components/footer.html').then(res => res.text()).then(data => { document.getElementById('footer').innerHTML = data; });
     </script>
 </head>
 
@@ -71,7 +73,7 @@
     </section>
 
     <!-- Sextion Three -->
-    <div class="section3Box">
+    <section class="section3Box">
         <div class="section3Container">
             <div class="left"></div>
             <div class="right">
@@ -81,7 +83,7 @@
                     satisfaction</p>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Sextion Four -->
     <section class="section4">
@@ -135,40 +137,118 @@
     </section>
 
     <!-- Sextion Five -->
-    <section class="bg-[var(--primaryColor)]">
-        <div class="mx-auto max-w-5xl h-screen text-center py-28">
-            <h2 class="text-white">Driving for Hermesgo</h2>
-            <p class="text-sm md:text-base text-white my-7">During the holiday season, companies such as UPS and Ontrac
+    <section class="section5">
+        <div class="section5Container">
+            <h2 style="color: white;">Driving for Hermesgo</h2>
+            <p class="headingPara">During the holiday season, companies
+                such as UPS and Ontrac
                 face severe shortages of drivers
                 to complete deliveries. At HermesGO, we provide extra drivers to these large companies and
                 help them through their busiest season. When you sign up to become a driver with HermesGO,
                 you sign up for a job that offers many advantages, and allows you to earn extra money!</p>
-            <div class="grid grid-cols-12 items-center gap-10">
-                <div class="col-span-4">
-                    <div
-                        class="bg-black bg-opacity-25 rounded-t-lg flex flex-col items-center justify-center border-b-4 border-green-600 h-72 shadow-xl">
-                        <img src="https://joadre.com/wp-content/uploads/2019/02/no-image.jpg" class="w-28 h-auto">
-                        <h3 class="text-green-600 mb-2 mt-4">Base Pay</h3>
-                        <p class="text-blue-200">N/A</p>
-                    </div>
+            <div class="cardsContainer">
+                <div class="card">
+                    <img src="https://joadre.com/wp-content/uploads/2019/02/no-image.jpg" class="">
+                    <h3>Base Pay</h3>
+                    <p>N/A</p>
                 </div>
-                <div class="col-span-4">
-                    <div
-                        class="bg-black bg-opacity-25 rounded-t-lg flex flex-col items-center justify-center border-b-4 border-green-600 h-96 shadow-xl">
-                        <img src="https://joadre.com/wp-content/uploads/2019/02/no-image.jpg" class="w-28 h-auto">
-                        <h3 class="text-green-600 mb-2 mt-4">Base Pay</h3>
-                        <p class="text-blue-200">N/A</p>
-                    </div>
+                <div class="card card2">
+                    <img src="https://joadre.com/wp-content/uploads/2019/02/no-image.jpg">
+                    <h3>Get Fit</h3>
+                    <ul class="">
+                        <li>1. Must be 18 years of age or over to
+                            deliver</li>
+                        <li>
+                            2. Valid U.S drivers licences
+                        </li>
+                        <li>
+                            3. Reliable
+                        </li>
+                        <li> 4. door sedan or large vehicle</li>
+                        <li>5. Smatphone</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <img src="https://joadre.com/wp-content/uploads/2019/02/no-image.jpg">
+                    <h3>Safety</h3>
+                    <p>Safety is the top priority at HemesGO.
+                        While our drivers are expected to follow
+                        traffic laws and drive safely, they can
+                        also feel safer about practicing social
+                        distancing by driving alone, and having
+                        contactless-delivery of packages</p>
+                </div>
+                <div class="card">
+                    <img src="https://joadre.com/wp-content/uploads/2019/02/no-image.jpg">
+                    <h3>Get Fit</h3>
+                    <p>Drivers with HermesGO have an
+                        excellent opportunity to walk and
+                        lift packages and get cardio by
+                        staying active delivering.</p>
+                </div>
+                <div class="card card2">
+                    <img src="https://joadre.com/wp-content/uploads/2019/02/no-image.jpg">
+                    <h3>Freedom</h3>
+                    <p>HermesGo drivers have freedom and
+                        can feel like their own boss. Other
+                        driving jobs leave drivers at the
+                        mercy of their passengers to dictate
+                        music or air conditioning preferenc-
+                        es. Not with HermesGO. Drive with
+                        your comfort and freedom in mind!</p>
+                </div>
+                <div class="card">
+                    <img src="https://joadre.com/wp-content/uploads/2019/02/no-image.jpg">
+                    <h3>Location</h3>
+                    <p>Drivers pick-up locations are located in
+                        Sun Valley, Commerce, Fontana, and
+                        Compton.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Sextion Six -->
-    <section></section>
+    <section class="section6">
+        <div class="section6Container">
+            <div class="head">
+                <h2>Let's Talk</h2>
+                <p>We would love to hear from you!</p>
+            </div>
+            <form>
+                <div>
+                    <label for="fName">Name</label>
+                    <input placeholder="Enter your Name" type="text" id="fName">
+                </div>
+                <div>
+                    <label for="fEmail">Email</label>
+                    <input placeholder="Enter your Email" type="email" id="fEmail">
+                </div>
+                <div>
+                    <label for="fPhoneNumber">Phone Number</label>
+                    <input placeholder="Enter yout Phone Number" type="text" id="fPhoneNumber">
+                </div>
+                <div>
+                    <label for="fCity">City</label>
+                    <input placeholder="Enter your City" type="text" id="fCity">
+                </div>
+                <div>
+                    <label for="fState">State</label>
+                    <input placeholder="Enter your State" type="text" id="fState">
+                </div>
+                <div>
+                    <label for="fMessage">Message</label>
+                    <input placeholder="Enter your Text" type="text" id="fMessage">
+                </div>
+                <div></div>
+                <button>Submit</button>
+                <div></div>
+            </form>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer id="footer"></footer>
 
     <script src="./scripts/components/header.js"></script>
 </body>

@@ -12,7 +12,7 @@
 }
 
 .topBar {
-    background: rgb(247, 247, 247);
+    background: rgb(239, 242, 248);
     font-size: 0.750rem;
 }
 
@@ -23,7 +23,7 @@
     justify-content: center;
     align-items: center;
     max-width: 64rem;
-    height: 2.5rem;
+    height: 2.4rem;
 }
 
 .topBar div a {
